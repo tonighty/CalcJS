@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>VK</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="jsss.js"></script>
+</head>
+
+<body onkeydown="KeyEvent()" onload="Init()">
+    <table>
+        <form name="calc">
+            <tr>
+                <td colspan="4">
+                    <input type="text" id="editWide" name="ReadOut" value="0" disabled>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" name="Percent" value="%" onclick="Percent()">
+                </td>
+                <td>
+                    <input type="button" name="Sqrt" value="√" onclick="SqrtBtn()">
+                </td>
+                <td>
+                    <input type="button" name="Sqr" value="x²" onclick="SqrBtn()">
+                </td>
+                <td>
+                    <input type="button" name="Rev" value="1/x" onclick="Reverse()">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" name="CE" value="CE" onclick="Clear()">
+                </td>
+                <td>
+                    <input type="button" name="C" value="C" onclick="ClearEntry()">
+                </td>
+                <td>
+                    <input type="button" name="Delete" value="<-" onclick="Del()">
+                </td>
+                <td>
+                    <input type="button" name="Div" value="÷" onclick="Operation('/')">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" name="Seven" value="7" onclick="NumPressed(7)">
+                </td>
+                <td>
+                    <input type="button" name="Eight" value="8" onclick="NumPressed(8)">
+                </td>
+                <td>
+                    <input type="button" name="Nine" value="9" onclick="NumPressed(9)">
+                </td>
+                <td>
+                    <input type="button" name="Mult" value="×" onclick="Operation('*')">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" name="Four" value="4" onclick="NumPressed(4)">
+                </td>
+                <td>
+                    <input type="button" name="Five" value="5" onclick="NumPressed(5)">
+                </td>
+                <td>
+                    <input type="button" name="Six" value="6" onclick="NumPressed(6)">
+                </td>
+                <td>
+                    <input type="button" name="Sub" value="-" onclick="Operation('-')">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" name="One" value="1" onclick="NumPressed(1)">
+                </td>
+                <td>
+                    <input type="button" name="Two" value="2" onclick="NumPressed(2)">
+                </td>
+                <td>
+                    <input type="button" name="Three" value="3" onclick="NumPressed(3)">
+                </td>
+                <td>
+                    <input type="button" name="Plus" value="+" onclick="Operation('+')">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" name="Nega" value="±" onclick="Neg()">
+                </td>
+                <td>
+                    <input type="button" name="Zero" value="0" onclick="NumPressed(0)">
+                </td>
+                <td>
+                    <input type="button" name="Dot" value="." onclick="Decimal()">
+                </td>
+                <td>
+                    <input type="button" name="Ans" value="=" onclick="Operation('=')">
+                </td>
+            </tr>
+        </form>
+    </table>
+</body>
+
+</html>
