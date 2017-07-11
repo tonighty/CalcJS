@@ -150,5 +150,11 @@ function KeyEvent() {
         case '%':
             Percent();
             break;
+        case 'Enter':
+            Operation('=');
+            break;
+        case 'Backspace':
+            Del();
+            break;
     }
 }
